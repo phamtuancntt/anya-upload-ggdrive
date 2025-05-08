@@ -39,3 +39,16 @@ watcher
   });
 
 console.log(`Đang theo dõi thư mục: ${watchDir}`);
+
+const express = require('express');
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+// Để Render thấy server đang chạy
+app.get('/', (req, res) => {
+  res.send('Anya Watcher Service is running...');
+});
+
+app.listen(PORT, () => {
+  console.log(`HTTP Server started on port ${PORT}`);
+});
