@@ -1,17 +1,15 @@
 {
   "name": "anya-drive-uploader",
-  "version": "1.1.0",
-  "description": "Auto upload files to Google Drive with watcher",
+  "version": "1.2.0",
+  "description": "Auto upload files to Google Drive with direct API",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "watch": "node watcher.js"
+    "start": "node index.js"
   },
   "dependencies": {
-    "axios": "^1.3.6",
-    "chokidar": "^3.5.3",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "googleapis": "^105.0.0"
+    "googleapis": "^105.0.0",
+    "multer": "^1.4.5"
   }
 }
